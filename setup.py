@@ -5,7 +5,6 @@ import sys
 from functools import lru_cache
 from subprocess import DEVNULL, call
 
-import torch
 from setuptools import setup
 from torch.utils import cpp_extension
 
@@ -62,7 +61,6 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3",
     ],
-    install_requires=["torch"],
     python_requires=">=3.7",
     extras_require={
         "testing": [
